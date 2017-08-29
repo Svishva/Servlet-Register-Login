@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>Servlet Ex3</display-name>
+	<welcome-file-list>
+		<welcome-file>ind.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+
+	<servlet>
+		<servlet-name>registerxml</servlet-name>
+		<servlet-class>com.example.Mdatabase</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>registerxml</servlet-name>
+		<url-pattern>/verify</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>loggeduserxml</servlet-name>
+		<jsp-file>/Register/LoggedPage1.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>loggeduserxml</servlet-name>
+		<url-pattern>/status</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>loginxml</servlet-name>
+		<jsp-file>/Login/Login.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>loginxml</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>userinfoxml</servlet-name>
+		<jsp-file>/Login/UserInfo.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>userinfoxml</servlet-name>
+		<url-pattern>/userinfo</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>successxml</servlet-name>
+		<jsp-file>/Register/SuccessPage.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>successxml</servlet-name>
+		<url-pattern>/Success</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>failurexml</servlet-name>
+		<jsp-file>/Register/FailurePage.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>failurexml</servlet-name>
+		<url-pattern>/Failure</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+
+
+	<servlet>
+		<servlet-name>indexxml</servlet-name>
+		<jsp-file>/ind.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>indexxml</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+
+
+
+
+
+	<servlet>
+		<servlet-name>alreadyregisteredxml</servlet-name>
+		<jsp-file>/Register/AlreadyRegistered.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>alreadyregisteredxml</servlet-name>
+		<url-pattern>/errorlogin</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<servlet>
+		<servlet-name>Databasrtimeoutxml</servlet-name>
+		<jsp-file>/Login/Login.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Databasrtimeoutxml</servlet-name>
+		<url-pattern>/Login</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<servlet>
+		<servlet-name>loginpagexml</servlet-name>
+		<jsp-file>/ErrorPages/MongoTimeout.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>loginpagexml</servlet-name>
+		<url-pattern>/Databasetimeout</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>loginsucessxml</servlet-name>
+		<jsp-file>/Login/LoginSuccess.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>loginsucessxml</servlet-name>
+		<url-pattern>/LoginSuccess</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>loginfailedxml</servlet-name>
+		<jsp-file>/Login/LoginFailed.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>loginfailedxml</servlet-name>
+		<url-pattern>/LoginFailed</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<servlet>
+		<servlet-name>adminxml</servlet-name>
+		<jsp-file>/admin/adminpage.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>adminxml</servlet-name>
+		<url-pattern>/admin</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>adminupdatexml</servlet-name>
+		<jsp-file>/admin/SuccessUpdate.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>adminupdatexml</servlet-name>
+		<url-pattern>/adminupdate</url-pattern>
+	</servlet-mapping>
+
+
+
+	<servlet>
+		<servlet-name>registerxm</servlet-name>
+		<jsp-file>/Register/Register.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>registerxm</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+
+
+
+	<servlet>
+		<servlet-name>logoutxml</servlet-name>
+		<jsp-file>/Login/Logout.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>logoutxml</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	<servlet>
+		<servlet-name>deletefailxml</servlet-name>
+		<jsp-file>/admin/DeleteFail.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>deletefailxml</servlet-name>
+		<url-pattern>/deletefail</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>deletexml</servlet-name>
+		<jsp-file>/admin/Edit.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>deletexml</servlet-name>
+		<url-pattern>/admindelete</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+		<servlet>
+		<servlet-name>editxml</servlet-name>
+		<jsp-file>/admin/AdminUpdate.jsp</jsp-file>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>editxml</servlet-name>
+		<url-pattern>/adminedit</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
+
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/ErrorPages/Error404.jsp</location>
+	</error-page>
+
+	<error-page>
+		<exception-type>com.mongodb.MongoTimeoutException</exception-type>
+		<location>/ErrorPages/MongoTimeout.jsp</location>
+	</error-page>
+
+
+
+
+
+
+</web-app>
